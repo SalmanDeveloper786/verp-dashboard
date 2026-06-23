@@ -14,7 +14,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card";
 
-export function KpiCards({ isVerp }: { isVerp: boolean }) {
+export function KpiCards({ isVerp = false }: { isVerp?: boolean } = {}) {
   return (
     <section className="space-y-5">
       {!isVerp && <div className="space-y-1">
